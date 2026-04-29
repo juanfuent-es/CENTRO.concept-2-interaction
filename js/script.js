@@ -1,5 +1,5 @@
 // Interactivity controls.
-const INTERACTION_RADIUS = 100;
+const INTERACTION_RADIUS = 1000;
 const REPULSION_STRENGTH = 2.75;
 const RETURN_STRENGTH = 0.05;
 const DAMPING = 0.86;
@@ -98,13 +98,7 @@ function syncTitleFromCSS() {
 
     const computed = window.getComputedStyle(titleElement);
     titleText = titleElement.textContent.trim();
-    if (titleText.includes('&')) {
-        const [firstPart, ...rest] = titleText.split('&');
-        const secondPart = rest.join('&').trim();
-        titleLines = [firstPart.trim(), `& ${secondPart}`.trim()];
-    } else {
-        titleLines = [titleText];
-    }
+    titleLines = [titleText];
     titleFontFamily = computed.fontFamily;
     titleFontSize = parseFloat(computed.fontSize) || 96;
     titleFontWeight = computed.fontWeight;

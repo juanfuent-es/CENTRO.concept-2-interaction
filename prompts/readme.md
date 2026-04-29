@@ -13,7 +13,3 @@ Archivo JavaScript que contiene el código necesario para la creación de la act
 ### `css/style.css`
 
 Archivo CSS que contiene el código necesario para la creación de la actividad.
-
-### `img/centro-logo.svg`
-
-Logotipo de CENTRO.
