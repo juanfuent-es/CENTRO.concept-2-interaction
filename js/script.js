@@ -1,9 +1,11 @@
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  const container = document.getElementById('sketch');
+  const canvas = createCanvas(windowWidth, windowHeight * .6);
+  canvas.parent(container);
 }
 
 function draw() {
-  background(220);
+  clear();
 }
 
 function windowResized() {

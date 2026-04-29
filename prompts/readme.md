@@ -1,0 +1,23 @@
+El presente repositorio contiene los archivos necesarios para la creación de la actividad de Concept 2 Interaction.
+
+## Archivos
+
+### `index.html`
+
+Contenedor de la actividad. Contiene el código HTML, CSS y JavaScript necesarios para la creación de la actividad.
+
+### `js/script.js`
+
+Archivo JavaScript que contiene el código necesario para la creación de la actividad.
+
+### `css/style.css`
+
+Archivo CSS que contiene el código necesario para la creación de la actividad.
+
+### `img/centro-logo.svg`
+
+Logotipo de CENTRO.
+
+### `img/og-cover.png`
+
+Imagen de portada para la actividad.
