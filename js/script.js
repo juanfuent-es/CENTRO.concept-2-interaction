@@ -18,7 +18,7 @@ let particlePalette = [];
 let titleElement;
 let titleText = '';
 let titleLines = [];
-let titleFontFamily = 'monospaced';
+let titleFontFamily = 'Space Mono, monospace';
 let titleFontSize = 96;
 let titleFontWeight = '400';
 
