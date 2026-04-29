@@ -17,7 +17,3 @@ Archivo CSS que contiene el código necesario para la creación de la actividad.
 ### `img/centro-logo.svg`
 
 Logotipo de CENTRO.
-
-### `img/og-cover.png`
-
-Imagen de portada para la actividad.

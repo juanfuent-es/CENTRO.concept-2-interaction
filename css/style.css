@@ -1,4 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
+  --color-primary: #101010;
+  --color-background: #fff;
   font-family: 'Space Mono', monospace;
 }
 
@@ -12,6 +18,7 @@ main {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
+  padding: 1em;
 }
 
 #sketch {
@@ -20,4 +27,28 @@ main {
   left: 0;
   width: 100%;
   z-index: -1;
+}
+
+footer {
+  width: 100%;
+  padding: 2em 1em;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  border: 1px solid currentColor;
+  padding: .25em .5em;
+  border-radius: .25em;
+  margin: .75em 0;
+  display: inline-block;
+}
+
+a:hover {
+  background-color: var(--color-primary);
+  color: var(--color-background);
 }
