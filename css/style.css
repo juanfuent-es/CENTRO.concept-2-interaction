@@ -6,6 +6,7 @@ html {
   --color-primary: #101010;
   --color-background: #fff;
   font-family: 'Space Mono', monospace;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
 
 header {
   max-width: 1024px;
-  margin: 0 auto;
+  margin: 2em auto;
   padding: 1em;
   text-align: center;
 }
@@ -39,7 +40,7 @@ h1 {
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
-  font-size: clamp(12vw, 6rem, 24vw);
+  font-size: max(14vw, 14dvh);
   text-wrap-style: balance;
   line-height: .8em;
   max-width: 1280px;
@@ -68,7 +69,6 @@ section {
 
 #sketch {
   max-width: none;
-  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -77,12 +77,10 @@ section {
 }
 
 footer {
+  text-align: center;
   width: 100%;
   padding: 2em 1em;
   text-align: center;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 a {

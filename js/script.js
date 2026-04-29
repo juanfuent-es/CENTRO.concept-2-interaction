@@ -5,8 +5,8 @@ const RETURN_STRENGTH = 0.05;
 const DAMPING = 0.86;
 const ROTATION_STRENGTH = 0.65;
 const ROTATION_SMOOTHING = 0.16;
-const PARTICLE_STEP = 8;
-const PARTICLE_SIZE = 8;
+const PARTICLE_STEP = 9;
+const PARTICLE_SIZE = 9;
 const ALPHA_THRESHOLD = 90;
 
 const COLOR_PALETTE = ['#5518D9', '#8777F2', '#222140', '#F2A81D', '#F25252'];
@@ -66,8 +66,7 @@ function draw() {
 
         noFill();
         strokeWeight(p.weight);
-        stroke(p.color);
-        // rect(p.homeX, p.homeY, PARTICLE_SIZE, PARTICLE_SIZE);
+        stroke(0, abs(sin(frameCount * 0.05 - p.homeX * 0.1 + p.homeY * 0.1)) * 255);
         line(p.x, p.y, p.homeX, p.homeY);
         line(p.x + PARTICLE_SIZE, p.y, p.homeX + PARTICLE_SIZE, p.homeY);
         line(p.x, p.y + PARTICLE_SIZE, p.homeX, p.homeY + PARTICLE_SIZE);
@@ -75,7 +74,7 @@ function draw() {
         const cx = p.x + PARTICLE_SIZE * 0.5;
         const cy = p.y + PARTICLE_SIZE * 0.5;
 
-        fill(p.color);
+        fill(0);
         noStroke();
         push();
         translate(cx, cy);
